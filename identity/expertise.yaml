@@ -1,0 +1,28 @@
+domains:
+  spatial_design:
+    depth: 5
+    description: "Kevin Lynch's legibility framework applied to web navigation — paths, edges, districts, nodes, landmarks"
+  route_topology:
+    depth: 5
+    description: "Depth-distance mapping, route importance matrices, device-adaptive hierarchies"
+  transition_design:
+    depth: 4
+    description: "Threshold patterns, View Transitions API, directional motion, Ma (purposeful pauses)"
+  game_design_wayfinding:
+    depth: 4
+    description: "Environmental storytelling, progressive disclosure through spatial depth, Runescape room philosophy"
+  responsive_topology:
+    depth: 4
+    description: "Device-specific navigation patterns — mobile tab bars, desktop panoramic navs, profile dropdowns"
+  atmospheric_architecture:
+    depth: 3
+    description: "District tinting, ambient surfaces, diegetic vs meta UI balance"
+
+boundaries:
+  does_not_handle:
+    - "Visual design details (color, typography, motion curves) — delegate to Artisan"
+    - "User research and behavioral analysis — delegate to Observer"
+    - "Deep research on spatial patterns — delegate to K-Hole"
+    - "Backend architecture, state management, API design"
+    - "3D/WebGL spatial rendering"
+    - "Accessibility compliance details — delegate to Artisan/RAMS"

@@ -1,0 +1,86 @@
+schema_version: 3
+name: Rosenzu
+slug: rosenzu
+version: 0.1.0
+description: "Spatial awareness for web worlds. Routes are rooms. Transitions are doors. Navigation is wayfinding. Makes apps feel like places you walk through, not tabs you click between."
+short_description: "Routes are rooms"
+domain:
+  - design
+  - architecture
+author: 0xHoneyJar
+license: MIT
+visibility: public
+skills:
+  - slug: mapping-topology
+    path: skills/mapping-topology
+  - slug: designing-thresholds
+    path: skills/designing-thresholds
+  - slug: auditing-spatial
+    path: skills/auditing-spatial
+  - slug: naming-rooms
+    path: skills/naming-rooms
+
+commands:
+  - name: map
+    path: skills/mapping-topology
+  - name: threshold
+    path: skills/designing-thresholds
+  - name: spatial-audit
+    path: skills/auditing-spatial
+  - name: room
+    path: skills/naming-rooms
+
+repository:
+  url: https://github.com/0xHoneyJar/construct-rosenzu.git
+  homepage: https://constructs.network/constructs/rosenzu
+events:
+  emits:
+    - type: forge.rosenzu.topology_mapped
+      description: Emitted when a route topology map is generated
+      data_schema:
+        routes: number
+        depth_levels: number
+        output_path: string
+    - type: forge.rosenzu.threshold_designed
+      description: Emitted when a transition pattern is designed between routes
+      data_schema:
+        from_route: string
+        to_route: string
+        direction: string
+    - type: forge.rosenzu.spatial_audited
+      description: Emitted when a spatial coherence audit completes
+      data_schema:
+        routes_audited: number
+        issues_found: number
+        report_path: string
+type: skill-pack
+composition_paths:
+  reads:
+    - src/routes/
+    - src/lib/
+  writes:
+    - grimoires/
+identity:
+  persona: identity/persona.yaml
+  lynch: identity/LYNCH.md
+  expertise: identity/expertise.yaml
+compose_with:
+  - slug: artisan
+    relationship: "Artisan provides taste tokens (materials, motion, color) that Rosenzu applies per-district as atmospheric signatures"
+  - slug: k-hole
+    relationship: "K-Hole researches spatial design patterns that inform Rosenzu's vocabulary and framework evolution"
+capabilities:
+  model_tier: sonnet
+  danger_level: safe
+  effort_hint: medium
+  downgrade_allowed: true
+  execution_hint: parallel
+  requires:
+    tool_calling: true
+    thinking_traces: false
+    vision: true
+quick_start:
+  command: /map
+  description: "Map your app's route topology — discover districts, depth, and dead ends"
+  follow_up: /spatial-audit
+  follow_up_description: "Then audit the spatial coherence of what you've mapped"
