@@ -1,7 +1,7 @@
 schema_version: 3
 name: Rosenzu
 slug: rosenzu
-version: 0.1.0
+version: 0.2.0
 description: "Spatial awareness for web worlds. Routes are rooms. Transitions are doors. Navigation is wayfinding. Makes apps feel like places you walk through, not tabs you click between."
 short_description: "Routes are rooms"
 domain:
@@ -19,6 +19,8 @@ skills:
     path: skills/auditing-spatial
   - slug: naming-rooms
     path: skills/naming-rooms
+  - slug: furnishing-rooms
+    path: skills/furnishing-rooms
 
 commands:
   - name: map
@@ -29,6 +31,8 @@ commands:
     path: skills/auditing-spatial
   - name: room
     path: skills/naming-rooms
+  - name: furnish
+    path: skills/furnishing-rooms
 
 repository:
   url: https://github.com/0xHoneyJar/construct-rosenzu.git

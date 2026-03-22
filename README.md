@@ -18,6 +18,7 @@ npx constructs install rosenzu
 |---------|-------------|
 | `/map` | Scan your routes and build a spatial topology map |
 | `/room` | Name a feature's room before building its furniture |
+| `/furnish` | Define a room's emotional profile in measurable parameters |
 | `/spatial-audit` | Check spatial coherence across routes and devices |
 | `/threshold` | Design transitions between routes as doorways |
 
@@ -56,6 +57,22 @@ Shallow = discovery. Deep = ritual. The deeper you go, the more the world asks o
 | **Utility** | Returning user, task-oriented | Good desks, sharp tools, efficient |
 
 Same foundation. Same plumbing. Different furniture.
+
+## The Spatial Stack (v0.2)
+
+Five layers make a web world feel like a building:
+
+| Layer | What | How |
+|-------|------|-----|
+| **Topology** | Floor plan | Depth-distance mapping, fog of war, device adaptation |
+| **Hallway** | State between rooms | Reactive DB carries identity before you arrive |
+| **Doors** | Transitions | View Transitions API, directional thresholds, Ma pauses |
+| **Materials** | Room emotion | KANSEI profiles → design tokens (warmth, motion, shadow) |
+| **Entities** | Composition | ECS — rooms, cards, identities as composable data |
+
+Key insight: **a spinner is a failed hallway.** Loading states should feel like walking through a door, not waiting for a server.
+
+Grounded in 175+ web queries across RuneScape dungeoneering, KANSEI engineering, Convex world state, View Transitions API, and ECS architecture research.
 
 ## Origin
 
