@@ -58,17 +58,26 @@ composition_paths:
   reads:
     - src/routes/
     - src/lib/
+    - grimoires/purupuru/world/
   writes:
     - grimoires/
+    - src/lib/sky-eyes/
+integration:
+  first_class:
+    - slug: purupuru
+      surface: sky-eyes
+      description: "Rosenzu lives in Sora Tower. Sky-Eyes (/sky-eyes) is the observatory where spatial awareness becomes visible — topology maps, KANSEI profiles, hallway state, fog of war. The construct pack publishes for reuse; the lived experience is purupuru's observatory."
 identity:
   persona: identity/persona.yaml
   lynch: identity/LYNCH.md
   expertise: identity/expertise.yaml
 compose_with:
   - slug: artisan
-    relationship: "Artisan provides taste tokens (materials, motion, color) that Rosenzu applies per-district as atmospheric signatures"
+    relationship: "Artisan provides taste tokens (materials, motion, color) that Rosenzu applies per-district as atmospheric signatures and KANSEI profiles"
   - slug: k-hole
     relationship: "K-Hole researches spatial design patterns that inform Rosenzu's vocabulary and framework evolution"
+  - slug: observer
+    relationship: "Observer canvases reveal how users actually move through rooms — journey data that validates or challenges the topology"
 capabilities:
   model_tier: sonnet
   danger_level: safe
