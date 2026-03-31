@@ -2,8 +2,8 @@ schema_version: 3
 name: Rosenzu
 slug: rosenzu
 version: 0.2.0
-description: "Spatial navigation design for web apps. Routes are rooms. Transitions are doors. Navigation is wayfinding. Map your app's topology, design page transitions, audit for dead ends, and create distinct atmospheres per section. Inspired by Kevin Lynch's urban wayfinding."
-short_description: "Spatial navigation + page transitions"
+description: "Navigation and page transition design for web apps. Think of routes as rooms and transitions as doors. Map your app's structure, design how pages flow into each other, find dead-end routes, and give each section its own atmosphere."
+short_description: "Navigation + page transition design"
 domain:
   - design
   - architecture
