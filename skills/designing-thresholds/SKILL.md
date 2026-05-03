@@ -1,7 +1,8 @@
 ---
 name: designing-thresholds
 description: "Design transitions between routes as spatial thresholds — departure, door, arrival"
-user_invocable: true
+allowed-tools: [Bash, Read, Grep, Glob, Edit, Write]
+user-invocable: true
 trigger: "/threshold"
 ---
 

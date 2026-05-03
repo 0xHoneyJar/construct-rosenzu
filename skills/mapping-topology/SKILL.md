@@ -1,7 +1,8 @@
 ---
 name: mapping-topology
 description: "Map an app's route topology — discover districts, depth levels, navigation flows, and dead ends"
-user_invocable: true
+allowed-tools: [Bash, Read, Grep, Glob, Edit, Write]
+user-invocable: true
 trigger: "/map"
 ---
 

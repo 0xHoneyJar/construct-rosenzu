@@ -1,7 +1,8 @@
 ---
 name: furnishing-rooms
 description: "Given a room name + KANSEI target, output the material specification — tokens, tints, motion, thresholds"
-user_invocable: true
+allowed-tools: [Bash, Read, Grep, Glob, Edit, Write]
+user-invocable: true
 trigger: "/furnish"
 ---
 
