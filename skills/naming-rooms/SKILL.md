@@ -1,7 +1,8 @@
 ---
 name: naming-rooms
 description: "Map features to locations — name the room before building the furniture"
-user_invocable: true
+allowed-tools: [Bash, Read, Grep, Glob, Edit, Write]
+user-invocable: true
 trigger: "/room"
 ---
 

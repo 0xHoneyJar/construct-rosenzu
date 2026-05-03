@@ -1,7 +1,8 @@
 ---
 name: auditing-spatial
 description: "Audit spatial coherence — consistent nav clearance, device adaptation, district signals, dead ends"
-user_invocable: true
+allowed-tools: [Bash, Read, Grep, Glob, Edit, Write]
+user-invocable: true
 trigger: "/spatial-audit"
 ---
 
